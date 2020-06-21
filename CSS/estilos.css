@@ -1,0 +1,262 @@
+/*Soft Reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(52, 52, 52);
+    height: 100vh;
+    font-size: 12px;     
+  }
+
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+
+}
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+.menu{
+  padding: 15px;
+  background-color: rgb(70, 0, 90);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+}
+.menu a {
+  padding: 10px 20px;
+}
+.menu li {
+  list-style: none;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+a{
+  color: rgb(209,209,209);
+  text-decoration: none;
+}
+  .menu a:hover{
+    background-color: rgb(209, 209, 209);
+    color: rgb(70, 0, 90);
+    transition: color, background-color 1s, 2s;
+}
+  a.intern{
+    color: rgb(209, 209, 209);
+}
+header {
+  color: rgb(209, 209, 209);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Indie Flower', cursive;
+}
+.title{
+  font-size: 4em;
+  text-align: center;
+  color: rgb(209,209,209);
+  line-height: 1.8em;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8) translateY(10vh);
+  opacity: 0;
+  animation: .3s linear 3s intro-title forwards;
+}
+@keyframes intro-title{
+  from {
+
+  }
+  to{
+    align-items: center;
+    justify-content: center;
+    transform: scale(1) translateY(0vh);
+    opacity: 1;
+    }
+  }
+.subtitle1 {
+  text-align: center;
+  color: rgb(209,209,209);
+  line-height: 1.8em;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8) translateY(10vh);
+  opacity: 0;
+  animation: .6s linear 3s intro-subtitle1 forwards;
+}
+@keyframes intro-subtitle1{
+  from {
+
+  }
+  to{
+    align-items: center;
+    justify-content: center;
+    transform: scale(1) translateY(0vh);
+    opacity: 1;
+    }
+  }
+.subtitle2 {
+  text-align: center;
+  color: rgb(209,209,209);
+  line-height: 1.8em;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8) translateY(10vh);
+  opacity: 0;
+  animation: .9s linear 3s intro-subtitle1 forwards;
+}
+@keyframes intro-subtitle2{
+  from {
+
+  }
+  to{
+    align-items: center;
+    justify-content: center;
+    transform: scale(1) translateY(0vh);
+    opacity: 1;
+    }
+  }
+div {
+  margin: 25px;
+}
+h2, p, h3 {
+  text-align: center;
+  margin: 30px;
+  color: rgb(209, 209, 209);
+}
+  .aboutme {
+    height: 130vh;
+    text-indent: 1.3em;
+    font-size: 1.1em;
+    font-family: 'Roboto Mono', monospace;
+}
+  .aboutme p{
+    text-align: justify;
+  }
+  .aboutme a{
+    color: rgb(95, 40, 110);
+    text-decoration: underline;
+  }
+  .me img{
+    float: left;
+    display: block;
+    margin: 20px;
+    height: 140px;
+    border-radius: 20%;
+  }
+  .hab {
+    font-family: 'Indie Flower', cursive;
+    height: 50vh;
+}
+    .hab li{
+      margin: 40px;
+      color: rgb(209, 209, 209);
+}
+  .projetos {
+    padding: 2em;
+    min-height: 80vh;
+    height: 100vh;
+    font-family: 'Indie Flower', cursive;
+}
+div.grid {
+  padding-top: 2em;
+}
+    .projetos .grid {
+      display: grid;
+      gap: 5em;
+    }
+    @media (min-width: 560px) {
+      .projetos .grid {
+        grid-template-columns: 240px 240px;
+      }
+    }
+    
+    @media (min-width: 880px) {
+      .projetos .grid {
+        text-align: center;
+        grid-template-columns: repeat(3, 280px);
+        align-content: center;
+        justify-content: center;
+        height: calc(100vh - 8em - 48px);
+      }
+    }
+    .projetos h2{
+      font-size: 2.5em;
+    }
+    figure{
+      list-style: none;
+}
+    .img-projetos {
+      display: block;
+      margin: 0px;
+      height: 130px;
+      border-radius: 20%;
+      transition: transform 500ms;
+}
+    .img-app {
+      display: block;
+      height: 130px;
+    }
+    figcaption.proj {
+      color: rgb(209, 209, 209);
+      font-size: 20px;
+      text-align: center;
+}
+    .card,
+    .card2 {
+      position: relative;
+      transition: transform 2s;
+    }
+    .card:hover, .card2:hover {
+      transform: scale(1.2);
+    }
+  .final {
+    text-align: center;
+    height: 50vh;
+    font-family: 'Roboto Slab', serif;
+}
+    .final .grid{
+      align-items: center;
+      justify-content: center;
+      display: grid;
+      gap: 2em;
+    }
+    .grid a{
+      transition: text-shadow 2s;
+    }
+    .grid a:active, .grid a:hover{
+      text-shadow: 0px 0px 50px rgb(70, 0, 90);
+    }
+    @media (min-width: 560px) {
+      .final .grid {
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, 140px);
+      }
+    }
+    .img-redes{ 
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      height: 80px;
+      border-radius: 35%;
+    }
+    .final a {
+      font-size: 5em;
+      color: rgb(209,209,209)
+    }
+    
